@@ -13,4 +13,8 @@ public interface ContentService {
     public void deleteContent(Integer id);
 
     public void updateContent(Content content);
+
+    public List<Content> findContentList();
+
+    public Content findOne(Integer id);
 }

@@ -10,6 +10,25 @@
         value(#{username}, #{sex}, #{content}, #{createTime})
     </insert>
 
+    <select id="findContentByUsername" parameterType="java.lang.String" resultType="pojo.Content">
+        select * from content where username = ${username}
+    </select>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete from content where id = #{id}
+    </delete>
+
+    <update id="update" parameterType="pojo.Content">
+        update content set content = #{content} where id = #{id}
+    </update>
+
+    <select id="findContentList" parameterType="java.lang.String" resultType="pojo.Content">
+        select * from content
+    </select>
+
+    <select id="findOne" parameterType="java.lang.Integer" resultType="pojo.Content">
+        select * from content where id = #{id}
+    </select>
 
     <!--<insert id="insertStu" >-->
         <!--insert into student(id,name,score,hobby)-->

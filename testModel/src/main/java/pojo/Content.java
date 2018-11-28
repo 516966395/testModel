@@ -17,11 +17,20 @@ public class Content {
     public Content() {
     }
 
-    public Content(String username, String sex, String content, Date createTime) {
+    public Content(Integer id, String username, String sex, String content, Date createTime) {
+        this.id = id;
         this.username = username;
         this.sex = sex;
         this.content = content;
         this.createTime = createTime;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getUsername() {

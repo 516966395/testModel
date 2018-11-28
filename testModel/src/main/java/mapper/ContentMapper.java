@@ -13,4 +13,8 @@ public interface ContentMapper {
     public void delete(Integer id);
 
     public void update(Content content);
+
+    public List<Content> findContentList();
+
+    public Content findOne(Integer id);
 }

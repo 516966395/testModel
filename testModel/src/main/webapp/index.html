@@ -3,24 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>评论</title>
+
+    <script src="js/angularjs/angular.min.js"></script>
+
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/contentController.js"></script>
+
 </head>
-<body>
+<body ng-app="cipher" ng-controller="contentController" ng-init="searchList()">
+
 
     <h1>添加评论</h1>
 
-    <form action="content/save.do" method="post">
+    <!--<form action="content/save.do" method="post">-->
         <div>
-            姓名: <input type="text" name="username"/>
+            姓名: <input type="text" name="username" ng-model="entity.username"/>
         </div>
         <div>
-            性别  男:<input type="radio" name="sex" value="m"/>
-            女:<input type="radio" name="sex" value="w"/>
+            性别  男:<input type="radio" name="sex" value="m" ng-model="entity.sex"/>
+            女:<input type="radio" name="sex" value="w" ng-model="entity.sex"/>
         </div>
         <div>
-            <textarea name="content"></textarea>
+            <textarea name="content" ng-model="entity.content"></textarea>
         </div>
-        <input type="submit" value="添加评论"/>
-    </form>
+        <input type="submit" ng-click="saveContent()" value="提交评论"/>
+    <!--</form>-->
+
+        <div style="margin-top: 20px">
+            <table>
+                <tr>
+                    <th width="50px">姓名</th>
+                    <th>性别</th>
+                    <th>内容</th>
+                    <th>评论时间</th>
+                    <th>操作</th>
+                </tr>
+                <tr ng-repeat="item in list">
+                    <td width="50px">{{item.username}}</td>
+                    <td>{{item.sex=='w'?'女':'男'}}</td>
+                    <td>{{item.content}}</td>
+                    <td>{{item.createTime}}</td>
+                    <td>
+                        <button ng-click="showContent(item.id)">修改</button>
+                        <button ng-click="deleteContent(item.id)">删除</button>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
 
 </body>
 </html>

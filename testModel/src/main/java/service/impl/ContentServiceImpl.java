@@ -16,8 +16,17 @@ public class ContentServiceImpl implements ContentService {
     private ContentMapper contentMapper;
 
     public void saveContent(Content content) {
+
         content.setCreateTime(new Date());
-        contentMapper.save(content);
+
+        if(content.getId() != null){
+
+            contentMapper.update(content);
+        }else{
+
+            contentMapper.save(content);
+        }
+
     }
 
     public List<Content> findContentByUsername(String username) {
@@ -30,5 +39,13 @@ public class ContentServiceImpl implements ContentService {
 
     public void updateContent(Content content) {
         contentMapper.update(content);
+    }
+
+    public List<Content> findContentList() {
+        return contentMapper.findContentList();
+    }
+
+    public Content findOne(Integer id) {
+        return contentMapper.findOne(id);
     }
 }

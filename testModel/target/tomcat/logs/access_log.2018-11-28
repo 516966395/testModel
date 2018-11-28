@@ -1,3 +1,14 @@
-0:0:0:0:0:0:0:1 - - [28/Nov/2018:17:21:54 +0800] "GET /index.html HTTP/1.1" 200 610 http-bio-8081-exec-1 86
-0:0:0:0:0:0:0:1 - - [28/Nov/2018:17:21:54 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8081-exec-3 4
-0:0:0:0:0:0:0:1 - - [28/Nov/2018:17:22:14 +0800] "POST /content/save.do HTTP/1.1" 200 4 http-bio-8081-exec-4 9864
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:04:03 +0800] "GET / HTTP/1.1" 304 - http-bio-8081-exec-1 66
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:04:03 +0800] "GET /js/contentController.js HTTP/1.1" 304 - http-bio-8081-exec-3 2
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:04:05 +0800] "GET /content.do HTTP/1.1" 200 308 http-bio-8081-exec-4 1159
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:04:08 +0800] "GET /content/findOne.do?id=2 HTTP/1.1" 200 97 http-bio-8081-exec-5 18
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:04:10 +0800] "POST /content/save.do HTTP/1.1" 200 14 http-bio-8081-exec-6 41
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:04:11 +0800] "GET /content.do HTTP/1.1" 200 306 http-bio-8081-exec-7 4
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:04:13 +0800] "GET /content/findOne.do?id=5 HTTP/1.1" 200 106 http-bio-8081-exec-8 4
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:04:20 +0800] "POST /content/save.do HTTP/1.1" 200 14 http-bio-8081-exec-9 6
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:04:21 +0800] "GET /content.do HTTP/1.1" 200 301 http-bio-8081-exec-10 5
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:04:45 +0800] "GET / HTTP/1.1" 304 - http-bio-8081-exec-1 1
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:04:45 +0800] "GET /js/contentController.js HTTP/1.1" 304 - http-bio-8081-exec-4 1
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:04:45 +0800] "GET /content.do HTTP/1.1" 200 301 http-bio-8081-exec-4 3
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:05:00 +0800] "POST /content/save.do HTTP/1.1" 200 14 http-bio-8081-exec-4 7
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:23:05:01 +0800] "GET /content.do HTTP/1.1" 200 394 http-bio-8081-exec-4 7

@@ -1,5 +1,5 @@
-pojo\Content.class
-controller\ContentController.class
-service\impl\ContentServiceImpl.class
-mapper\ContentMapper.class
-service\ContentService.class
+service/impl/ContentServiceImpl.class
+mapper/ContentMapper.class
+pojo/Content.class
+controller/ContentController.class
+service/ContentService.class

@@ -20,7 +20,7 @@ public class testContentService {
     @Test
     public void testSaveContent(){
 
-        Content content = new Content("张三","男","不错不错！", new Date());
+        Content content = new Content(null,"张三","男","不错不错！", new Date());
 
         contentService.saveContent(content);
     }
