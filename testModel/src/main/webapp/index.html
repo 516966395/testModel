@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>评论</title>
+</head>
+<body>
+
+    <h1>添加评论</h1>
+
+    <form action="content/save.do" method="post">
+        <div>
+            姓名: <input type="text" name="username"/>
+        </div>
+        <div>
+            性别  男:<input type="radio" name="sex" value="m"/>
+            女:<input type="radio" name="sex" value="w"/>
+        </div>
+        <div>
+            <textarea name="content"></textarea>
+        </div>
+        <input type="submit" value="添加评论"/>
+    </form>
+
+</body>
+</html>
