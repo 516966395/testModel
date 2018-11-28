@@ -12,5 +12,5 @@ public interface ContentMapper {
 
     public void delete(Integer id);
 
-    public void update(Integer id, Content content);
+    public void update(Content content);
 }

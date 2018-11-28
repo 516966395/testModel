@@ -18,8 +18,8 @@
         delete from content where id = #{id}
     </delete>
 
-    <update id="update">
-
+    <update id="update" parameterType="pojo.Content">
+        update content set content = #{content} where id = #{id}
     </update>
 
 
